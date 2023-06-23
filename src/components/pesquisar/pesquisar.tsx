@@ -1,7 +1,7 @@
 export function Pesquisar() {
   return (
     <div className="pesquisar">
-      <input type="text" />
+      <input className="barraPesquisa" placeholder="Insira aqui o nome da cidade" type="text" />
     </div>
   )
 }

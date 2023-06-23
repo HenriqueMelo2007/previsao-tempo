@@ -1,3 +1,7 @@
+:root {
+  --font: 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -7,13 +11,13 @@
 body {
   height: 100vh;
   background: linear-gradient(0deg, rgba(51,254,255,1) 0%, rgba(0,5,255,1) 100%) no-repeat;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font);
   color: rgb(255, 255, 255);
 }
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 14% 1fr;
+  grid-template-rows: 1fr 11% 1fr;
   height: 100vh;
 }
 
@@ -24,15 +28,49 @@ body {
   justify-content: center;
 }
 
-.previsao {}
+.previsao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
 
-.pesquisar {}
+
+.pesquisar {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
 
 .capitais {}
 
-.previsao, .pesquisar, .capitais {
+.pesquisar, .capitais {
   display: flex;
   justify-content: center;
   width: 50%;
   height: 100%;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+}
+
+.resultado {
+  width: 100%;
+  height: 75%;
+  background-color: rgb(255, 255, 255);
+}
+
+.barraPesquisa {
+  width: 100%;
+  height: 70%;
+  padding-left: 10px;
+  outline: none;
+  font-family: var(--font);
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 10px;
 }
