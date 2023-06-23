@@ -6,9 +6,9 @@ export function App() {
 
   return (
     <div className="container">
-      <Previsao/>
-      <Pesquisar/>
-      <Capitais/>
+      <div className="mini-container"><Previsao/></div>
+      <div className="mini-container"><Pesquisar/></div>
+      <div className="mini-container"><Capitais/></div>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 export function Previsao() {
   return (
-    <div className="previsao">Previsao</div>
+    <div className="previsao">
+      <h1>Previsão do tempo</h1>
+    </div>
   )
 }
