@@ -1,5 +1,5 @@
 export function Previsao() {
   return (
-    <div>Previsao</div>
+    <div className="previsao">Previsao</div>
   )
 }

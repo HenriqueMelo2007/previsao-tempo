@@ -1,5 +1,5 @@
 export function Capitais() {
   return (
-    <div>Capitais</div>
+    <div className="capitais">Capitais</div>
   )
 }

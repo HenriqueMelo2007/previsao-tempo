@@ -5,7 +5,7 @@ import { Capitais } from "./components/capitais/capitais"
 export function App() {
 
   return (
-    <div>
+    <div className="container">
       <Previsao/>
       <Pesquisar/>
       <Capitais/>

@@ -1,5 +1,5 @@
 export function Pesquisar() {
   return (
-    <div>Pesquisar</div>
+    <div className="pesquisar">Pesquisar</div>
   )
 }

@@ -8,3 +8,26 @@ body {
   height: 100vh;
   background: linear-gradient(0deg, rgba(51,254,255,1) 0%, rgba(0,5,255,1) 100%) no-repeat;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 14% 1fr;
+  height: 100vh;
+}
+
+.previsao {
+  background-color: rgb(154, 203, 147);
+}
+
+.pesquisar {
+  background-color: rgb(162, 134, 188);
+}
+
+.capitais {
+  background-color: rgb(110, 171, 171);
+}
+
+.previsao, .pesquisar, .capitais {
+  display: flex;
+  justify-content: center;
+}
