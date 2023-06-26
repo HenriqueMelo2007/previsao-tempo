@@ -4,6 +4,8 @@ import { Capitais } from "./components/capitais/capitais"
 
 export function App() {
 
+  console.log('olá')
+
   return (
     <div className="container">
       <div className="mini-container"><Previsao/></div>
