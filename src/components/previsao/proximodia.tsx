@@ -1,10 +1,10 @@
 export function ProximoDia () {
   return (
-    <div>
+    <div className="proxDia">
       <p>DiaEX</p>
       <div className="minMaxProximoDia">
-        <p>18°C</p>
-        <p>29°C</p>
+        <p>18°</p>
+        <p>29°</p>
       </div>
     </div>
 

@@ -10,18 +10,49 @@ h1 {
 }
 
 .resultado {
+  padding: 20px 30px;
   width: 100%;
   height: 75%;
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
+.tempEClima {
+  margin-top: 10px;
+  font-size: 2.6rem;
+}
+
 .infoAdicionais {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: 0.9rem;
 }
 
 .proximosDias {
+  display: grid;
+  width: 80%;
+  border-top: 1px solid rgb(0,5,255);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px 50px 0 50px;
+  gap: 13px;
+}
+
+.div {
+  margin-top: 20px;
   display: flex;
-  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.proxDia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minMaxProximoDia {
+  display: flex;
+  gap: 7px;
+  font-size: 0.85rem;
 }
