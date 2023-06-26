@@ -13,4 +13,15 @@ h1 {
   width: 100%;
   height: 75%;
   background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.infoAdicionais {
+  display: flex;
+  gap: 10px;
+}
+
+.proximosDias {
+  display: flex;
+  gap: 30px;
 }
