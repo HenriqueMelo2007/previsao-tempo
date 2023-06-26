@@ -1,0 +1,16 @@
+.previsao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+}
+
+.resultado {
+  width: 100%;
+  height: 75%;
+  background-color: rgb(255, 255, 255);
+}

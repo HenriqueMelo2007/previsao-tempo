@@ -1,3 +1,5 @@
+import './pesquisar.css'
+
 export function Pesquisar() {
   return (
     <div className="pesquisar">

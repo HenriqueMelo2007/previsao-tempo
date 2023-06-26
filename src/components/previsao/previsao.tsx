@@ -1,3 +1,5 @@
+import './previsao.css'
+
 export function Previsao() {
   return (
     <div className="previsao">

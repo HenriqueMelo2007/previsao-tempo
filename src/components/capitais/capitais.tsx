@@ -1,4 +1,5 @@
 import { ListaCapitais } from "./listacapitais";
+import './capitais.css'
 
 export function Capitais() {
   return (
