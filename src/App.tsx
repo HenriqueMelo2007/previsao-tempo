@@ -6,22 +6,22 @@ import axios from 'axios';
 
 export function App() {
 
-  const [nomeCidade, setNomeCidade] = useState('Campinas,SP')
+  const [nomeCidade, setNomeCidade] = useState('')
 
   useEffect(() => {
     async function buscandoNaAPI() {
-      const urlAPI = `https://api.hgbrasil.com/weather?format=json&key=47984d0e&city_name=${nomeCidade}`
+      const urlAPI = `${nomeCidade}`
       const jsonAPI = await axios.get(urlAPI)
       console.log(jsonAPI)
     }
 
     buscandoNaAPI()
-  }, [])
+  }, [nomeCidade])
 
   return (
     <div className="container">
       <div className="mini-container"><Previsao/></div>
-      <div className="mini-container"> <Pesquisar nomeCidade={nomeCidade} setNomeCidade={setNomeCidade}></Pesquisar> </div>
+      <div className="mini-container"> <Pesquisar setNomeCidade={setNomeCidade}></Pesquisar> </div>
       <div className="mini-container"><Capitais/></div>
     </div>
   )

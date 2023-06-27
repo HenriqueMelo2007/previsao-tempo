@@ -1,11 +1,10 @@
 import './pesquisar.css'
 
 type propsPesquisar = {
-  nomeCidade: string;
   setNomeCidade: (value: string | ((prevState: string) => string)) => void;
 }
 
-export function Pesquisar({nomeCidade, setNomeCidade}: propsPesquisar) {
+export function Pesquisar({setNomeCidade}: propsPesquisar) {
 
   return (
     <div className="pesquisar">
