@@ -2,18 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-h1 {
-  font-size: 2.7rem;
-  margin-bottom: 10px;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .resultado {
   padding: 20px 30px;
   border-radius: 30px;
   width: 100%;
-  height: 75%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   color: black;
 }

@@ -20,8 +20,9 @@ export function App() {
 
   return (
     <div className="container">
-      <div className="mini-container"><Previsao/></div>
       <div className="mini-container"> <Pesquisar setNomeCidade={setNomeCidade}></Pesquisar> </div>
+      <div className="mini-container"><Previsao/></div>
+      
     </div>
   )
 }
