@@ -26,31 +26,3 @@
   margin: 10px 0;
   font-size: 0.9rem;
 }
-
-.proximosDias {
-  display: grid;
-  width: 80%;
-  border-top: 1px solid rgb(0,5,255);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 10px 50px 0 50px;
-  gap: 13px;
-}
-
-.div {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.proxDia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.minMaxProximoDia {
-  display: flex;
-  gap: 7px;
-  font-size: 0.85rem;
-}

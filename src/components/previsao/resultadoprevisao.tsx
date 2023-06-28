@@ -1,5 +1,3 @@
-import { ProximoDia } from "./proximodia";
-
 export function ResultadoPrevisao() {
   return (
       <div className="resultado">
@@ -10,16 +8,6 @@ export function ResultadoPrevisao() {
           <p>Min: 17°C</p>
           <p>Máx: 25°C</p>
           <p>Sensação: <span>22°C</span></p>
-        </div>
-
-        <div className="div">
-          <div className="proximosDias">
-            <ProximoDia/>
-            <ProximoDia/>
-            <ProximoDia/>
-            <ProximoDia/>
-            <ProximoDia/>
-          </div>
         </div>
 
       </div>
