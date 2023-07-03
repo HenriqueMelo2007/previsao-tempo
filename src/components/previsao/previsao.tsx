@@ -1,3 +1,4 @@
+import { PesquisePorPrevisao } from './pesquiseporprevisao'
 import './previsao.css'
 import { ResultadoPrevisao } from './resultadoprevisao'
 
@@ -18,7 +19,7 @@ export function Previsao({pesquisaFeita, nomeCidadeEscolhida, pais, temperatura,
   return (
     <div className="previsao">
 
-      {pesquisaFeita ? <ResultadoPrevisao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} sensacao={sensacao} tempMin={tempMin} tempMax={tempMax} descricao={descricao} umidade={umidade} velocidadeVento={velocidadeVento} /> : <h1>Digite o nome de uma cidade para obter informações</h1>}
+      {pesquisaFeita ? <ResultadoPrevisao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} sensacao={sensacao} tempMin={tempMin} tempMax={tempMax} descricao={descricao} umidade={umidade} velocidadeVento={velocidadeVento} /> : <PesquisePorPrevisao/>}
 
 
       

@@ -38,8 +38,6 @@ export function App() {
       
     const urlAPI = `http://api.openweathermap.org/data/2.5/weather?q=${nomeCidade}&appid=${keyAPI}&units=metric&lang=pt_br`
     const jsonAPI = await axios.get(urlAPI).then(Response => Response.data)
-
-    console.log(jsonAPI)
     
     atribuindoValores(jsonAPI)
   }

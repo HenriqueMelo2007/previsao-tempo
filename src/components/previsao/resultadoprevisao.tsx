@@ -13,7 +13,7 @@ interface propsResultadoPrevisao {
 export function ResultadoPrevisao({nomeCidadeEscolhida, pais, temperatura, sensacao, tempMin, tempMax, descricao, umidade, velocidadeVento}:propsResultadoPrevisao) {
 
   return (
-      <div className="resultado">
+      <div className="boxPrevisao">
         <p>{nomeCidadeEscolhida}, {pais}</p>
         <h2 className="tempEClima">{temperatura}°C</h2>
 
