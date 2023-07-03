@@ -1,4 +1,4 @@
-type propsResultadoPrevisao = {
+interface propsResultadoPrevisao {
   nomeCidadeEscolhida: string,
   pais: string,
   temperatura: string, 

@@ -2,11 +2,12 @@ import { Previsao } from "./components/previsao/previsao"
 import { Pesquisar } from "./components/pesquisar/pesquisar"
 import { useState } from "react"
 import axios from 'axios';
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
 export function App() {
 
   const [nomeCidade, setNomeCidade] = useState('')
+
+  const [pesquisaFeita, setPesquisaFeita] = useState(false)
 
   const [nomeCidadeEscolhida, setNomeCidadeEscolhida] = useState('')
   const [pais, setPais] = useState('')
@@ -19,6 +20,7 @@ export function App() {
   const [velocidadeVento, setVelocidadeVento] = useState('')
 
   function atribuindoValores (jsonAPI) {
+    setPesquisaFeita(true)
     setNomeCidadeEscolhida(jsonAPI.name)
     setPais(jsonAPI.sys.country)
     setTemperatura(jsonAPI.main.temp)
@@ -28,7 +30,6 @@ export function App() {
     setDescricao(jsonAPI.weather[0].description)
     setUmidade(jsonAPI.main.humidity)
     setVelocidadeVento(jsonAPI.wind.speed)
-
   }
 
   
@@ -46,7 +47,7 @@ export function App() {
   return (
     <div className="container">
       <div className="mini-container"> <Pesquisar setNomeCidade={setNomeCidade} buscandoNaAPI={buscandoNaAPI}></Pesquisar> </div>
-      <div className="mini-container"><Previsao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} descricao={descricao} tempMin={tempMin} tempMax={tempMax} sensacao={sensacao} umidade={umidade} velocidadeVento={velocidadeVento} /></div>
+      <div className="mini-container"><Previsao pesquisaFeita={pesquisaFeita} nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} descricao={descricao} tempMin={tempMin} tempMax={tempMax} sensacao={sensacao} umidade={umidade} velocidadeVento={velocidadeVento} /></div>
     </div>
   )
 }

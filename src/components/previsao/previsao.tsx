@@ -1,7 +1,8 @@
 import './previsao.css'
 import { ResultadoPrevisao } from './resultadoprevisao'
 
-type propsPrevisao = {
+interface propsPrevisao {
+  pesquisaFeita: boolean,
   nomeCidadeEscolhida: string,
   pais: string,
   temperatura: string, 
@@ -13,10 +14,14 @@ type propsPrevisao = {
   velocidadeVento: string,
 }
 
-export function Previsao({nomeCidadeEscolhida, pais, temperatura, sensacao, tempMin, tempMax, descricao, umidade, velocidadeVento}:propsPrevisao) {
+export function Previsao({pesquisaFeita, nomeCidadeEscolhida, pais, temperatura, sensacao, tempMin, tempMax, descricao, umidade, velocidadeVento}:propsPrevisao) {
   return (
     <div className="previsao">
-      <ResultadoPrevisao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} sensacao={sensacao} tempMin={tempMin} tempMax={tempMax} descricao={descricao} umidade={umidade} velocidadeVento={velocidadeVento} />
+
+      {pesquisaFeita ? <ResultadoPrevisao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} sensacao={sensacao} tempMin={tempMin} tempMax={tempMax} descricao={descricao} umidade={umidade} velocidadeVento={velocidadeVento} /> : <h1>Digite o nome de uma cidade para obter informações</h1>}
+
+
+      
     </div>
   )
 }
