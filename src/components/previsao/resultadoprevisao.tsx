@@ -1,16 +1,32 @@
-export function ResultadoPrevisao() {
+type propsResultadoPrevisao = {
+  nomeCidadeEscolhida: string,
+  pais: string,
+  temperatura: string, 
+  sensacao: string, 
+  tempMin: string, 
+  tempMax: string, 
+  descricao: string, 
+  umidade: string, 
+  velocidadeVento: string,
+}
+
+export function ResultadoPrevisao({nomeCidadeEscolhida, pais, temperatura, sensacao, tempMin, tempMax, descricao, umidade, velocidadeVento}:propsResultadoPrevisao) {
+
   return (
       <div className="resultado">
-        <p>Cidade escolhida, Brasil</p>
-        <h2 className="tempEClima">20°C Chuvoso</h2>
+        <p>{nomeCidadeEscolhida}, {pais}</p>
+        <h2 className="tempEClima">{temperatura}°C</h2>
 
         <div className="infoAdicionais">
-          <p>Sensação: <span>22°C</span></p>
-          <p>Min: <span>23°C</span></p>
-          <p>Máx: <span>25°C</span></p>
+          <p>Sensação: <span>{sensacao}°C</span></p>
+          <p>Min: <span>{tempMin}°C</span></p>
+          <p>Máx: <span>{tempMax}°C</span></p>
         </div>
 
-        <p className="description">Descrição: <span>Chuvoso</span></p>
+        <p className="description">Descrição: <span>{descricao}</span></p>
+
+        <p className="umidade">Umidade: <span>{umidade}%</span></p>
+        <p className="velocidadeVento">Velocidade do vento: <span>{velocidadeVento}Km/h</span></p>
 
       </div>
   )
