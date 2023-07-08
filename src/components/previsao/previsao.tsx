@@ -20,8 +20,6 @@ export function Previsao({pesquisaFeita, nomeCidadeEscolhida, pais, temperatura,
     <div className="previsao">
 
       {pesquisaFeita ? <ResultadoPrevisao nomeCidadeEscolhida={nomeCidadeEscolhida} pais={pais} temperatura={temperatura} sensacao={sensacao} tempMin={tempMin} tempMax={tempMax} descricao={descricao} umidade={umidade} velocidadeVento={velocidadeVento} /> : <PesquisePorPrevisao/>}
-
-
       
     </div>
   )
